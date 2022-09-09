@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Navigation = () => {
   return (
-    <div className='fixed w-full h-20 shadow-xl z-[100]'>
+    <div style={{backgroundColor: `#ecf0f3`}} className='fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300'>
         <div className='flex justify-between items-center w-full px-2 2xl:px-16' >
           <div>
             <ul className='hidden md:flex'>
