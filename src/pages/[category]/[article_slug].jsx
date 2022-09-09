@@ -1,11 +1,12 @@
 import { useRouter } from 'next/router'
+import AppLayout from '../../components/Layouts/AppLayout';
 const Article = () => {
     const router = useRouter()
     console.log(router);
     return (
-        <div>
+        <AppLayout>
             Article Page
-        </div>
+        </AppLayout>
     );
 }
 

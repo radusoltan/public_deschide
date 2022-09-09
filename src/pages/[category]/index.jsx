@@ -1,7 +1,11 @@
-export default () => {
+import AppLayout from "../../components/Layouts/AppLayout";
+
+const index = () => {
     return (
-        <div>
-            Category Page
-        </div>
+        <AppLayout>
+            Categories
+        </AppLayout>
     );
 }
+
+export default index;
