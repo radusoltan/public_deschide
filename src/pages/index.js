@@ -1,5 +1,7 @@
 import Head from 'next/head'
-import AppLayout from '../components/Layouts/AppLayout'
+import AllNews from '../components/AllNews'
+import HomeCategory from '../components/HomeCategory'
+import AppLayout from '../components/Layout/AppLayout'
 
 export default function Home() {
   return (
@@ -10,12 +12,23 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main >
-        <h2 >
-          Homepage
-        </h2>
-      </main>
-
+      <div className="flex p-2 ">
+        <h2>HOME</h2>
+        
+      </div>
+      <div className='p-4 grid grid-flow-row-dense sm:grid-cols-1 md:grid-cols-5 '>
+        <div className="p-4 border-2 border-gray-200 rounded-md flex items-center justify-center self-start">
+          <AllNews />
+        </div>
+        <div className="p-4 border-2 border-gray-200 rounded-md flex items-center justify-center md:col-span-2 xl:col-span-4 ">
+          <HomeCategory />
+        </div>
+      </div>
+      <div className='p-4'>Editoriale</div>
+      
+      
+      
+        
       
     </AppLayout>
   )
